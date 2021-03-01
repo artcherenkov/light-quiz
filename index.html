@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Викторина</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="root">
+    <header>
+      <h1>I LOVE JAVASCRIPT</h1>
+    </header>
+    <main class="main">
+      <h1 class="main__title">Викторина</h1>
+      <section class="questions"></section>
+    </main>
+
+    <template id="question">
+      <div class="question">
+        <form class="question__form" name="q1" data-question-id="1">
+          <h2 class="question__title">Вопрос</h2>
+            <ul class="question__answers"></ul>
+            <button class="question__submit-btn" type="submit">Проверить</button>
+        </form>
+      </div>
+    </template>
+    <template id="question__answer">
+      <li class="question__answer">
+        <input class="question__input" type="radio" id="tq1a1" name="answer" value="Ответ1">
+        <label class="question__label" for="tq1a1">Ответ1</label>
+      </li>
+    </template>
+    <script src="script.js"></script>
+  </body>
+</html>
